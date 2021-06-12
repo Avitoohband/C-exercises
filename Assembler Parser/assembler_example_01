@@ -1,0 +1,15 @@
+;assembler_example_01
+
+MAIN: mov *r3,r4
+cmp r5, #3
+clr r5
+STR: .string "abc"
+.data 5,-9
+; comment
+
+.extern hi
+.entry ent1
+
+ARR: .data 5,-4
+ent1: cmp #3,#-3
+exit: stop

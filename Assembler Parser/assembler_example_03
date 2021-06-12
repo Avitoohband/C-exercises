@@ -1,0 +1,9 @@
+;assembler_example_03
+
+mov r7,#5
+cmp L3,#5
+stop #5
+jsr *r5
+.string: "asd"
+mov: data 1,2
+.data 1 2

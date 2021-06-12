@@ -1,0 +1,30 @@
+void add (int , int );
+void substract (int,int) ;
+void mult (int ,int );
+
+int main()
+{
+    int a,b,c;
+
+    void  (*arith[])(int,int) = {add,substract, mult};
+
+    scanf("%d%d%d",&a,&b,&c);
+
+    arith[c](a,b) ;
+
+    return 0;
+}
+
+void add (int a, int b)
+{
+    printf("%d\n",a+b);
+}
+void substract (int a,int b)
+{
+    printf("%d\n",a-b);
+}
+void mult (int a,int b)
+{
+    printf("%d\n",a*b);
+}
+
